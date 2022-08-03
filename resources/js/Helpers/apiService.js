@@ -2,7 +2,11 @@
 import axios from 'axios';
 
 export default {
-
+    data () {
+        return{
+            isLoading : false,
+        }
+    },
     methods: {
 
         async callApi(method, url, dataObj) {

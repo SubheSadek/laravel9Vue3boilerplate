@@ -8,6 +8,7 @@ const store = createStore({
   state() {
     return {
         authUser  : auth,
+        isLoading : false,
     }
   },
 
