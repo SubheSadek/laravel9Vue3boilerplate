@@ -1,0 +1,34 @@
+.ivu-notice-with-desc i {
+    font-size: 36px !important;
+    top: -6px !important;
+}
+
+.ivu-notice-icon-info i{
+    color: #2d8cf0 !important;
+}
+.ivu-notice-icon-success i{
+    color: #19be6b !important;
+}
+.ivu-notice-icon-warning i{
+    color: #ff9900 !important;
+}
+.ivu-notice-icon-error i{
+    color: #ed4014 !important;
+}
+
+.ivu-input-wrapper.ivu-input-wrapper-default input{
+    background-color: #f5f8fa !important;
+    border-color: #f5f8fa !important;
+    color: #5e6278 !important;
+    transition: color .2s ease,background-color .2s ease !important;
+    min-height: calc(1.5em + 1.65rem + 2px) !important;
+    padding: 0.825rem 1.5rem !important;
+    font-size: 1.15rem !important;
+    border-radius: 0.625rem !important;
+    display: block !important;
+    width: 100% !important;
+    background-clip: padding-box !important;
+    border: 1px solid #e4e6ef !important;
+    appearance: none !important;
+}
+
