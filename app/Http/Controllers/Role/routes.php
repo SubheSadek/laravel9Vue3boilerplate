@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Role\RoleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => 'admin'], function ($route) {
+    $route->resource('roles', RoleController::class);
 });
-
-Route::get('/testing', function () {
-    return response()->json(['message' => Route::currentRouteName()]);
-});
-
-
-Route::get('/{all?}', function () {
-    return view('welcome');
-})->where(['all' => '.*']);

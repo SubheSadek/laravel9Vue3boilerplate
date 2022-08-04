@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\Example\ExampleRequest;
 use App\Http\Controllers\Example\ExampleTrait;
 use App\Models\Example;
+use Illuminate\Http\Request;
 
 class ExampleController extends Controller
 {

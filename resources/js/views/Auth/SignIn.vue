@@ -63,8 +63,8 @@
 
                             <div class="text-center">
 
-                                <Button :loading="isLoading" :disabled="isLoading" @click="handleSubmit('formValidate')"
-                                    size="large" type="primary">
+                                <Button :loading="isLoading" shape="circle" style="height: 51px;" :disabled="isLoading" @click="handleSubmit('formValidate')"
+                                    size="large" type="primary" long>
                                     {{ isLoading ? 'Please wait ...' : 'Continue' }}
                                 </Button>
 
@@ -111,12 +111,12 @@ export default {
             this.$refs[name].validate(async (valid) => {
                 if (valid) {
                     this.isLoading = true;
-                    // const res = await this.callApi('POST', '/auth/login', this.formValidate);
-                    // if (res.status == 200) {
-                    //     this.s('Login successfully !');
-                    //     window.location.reload();
-                    // }
-                    // this.isLoading = false;
+                    const res = await this.callApi('POST', '/auth/login', this.formValidate);
+                    if (res.status == 200) {
+                        this.s('Login successfully !');
+                        window.location.reload();
+                    }
+                    this.isLoading = false;
                 }
             })
         },
@@ -124,6 +124,9 @@ export default {
             this.$refs[name].resetFields();
         }
     },
+    created() {
+        // console.log(this.$router.options.routes)
+    }
 }
 
 </script>

@@ -9,6 +9,8 @@ const store = createStore({
     return {
         authUser  : auth,
         isLoading : false,
+        isModal   : false,
+
     }
   },
 

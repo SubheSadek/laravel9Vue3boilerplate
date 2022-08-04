@@ -4,8 +4,8 @@
 </template>
 
 <script>
-import Master from '@/views/Master.vue'
-import SignIn from '@/views/pages/SignIn.vue'
+import Master from '@/views/Main/Master.vue'
+import SignIn from '@/views/Auth/SignIn.vue'
 export default {
     name: 'App',
     components: {

@@ -1,13 +1,19 @@
 
 import { createRouter, createWebHistory } from "vue-router";
-
+import * as icons from "../Helpers/sgvIcons"
 const routes = [
 
     {
         path: "/",
         name: "home",
-        component: () => import("../views/pages/Home.vue"),
-        meta: { title: "Dashboard" },
+        component: () => import("../views/Main/Home.vue"),
+        meta: { title: "Dashboard", menuName: "Dashboard", icon: icons.homeIcon, requiresAuth: true, menubar: true },
+    },
+    {
+        path: "/roles",
+        name: "roles",
+        component: () => import("../views/Permission/Role/index.vue"),
+        meta: { title: "Admin Role", menuName: "Admin Role", icon: icons.homeIcon, requiresAuth: true, menubar: true },
     },
 
 ];

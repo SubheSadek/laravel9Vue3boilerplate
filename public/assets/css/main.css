@@ -58,3 +58,22 @@
 .ivu-form-item-error-tip {
     font-weight: 300 !important;
 }
+
+.ivu-modal-body .ivu-form-item{
+    margin-bottom: 0 !important;
+}
+
+.ivu-btn i {
+    color: #fff !important;
+}
+.ivu-btn-default i{
+    color: #a1a5b7 !important;
+}
+
+.modal-button {
+    text-align:center;
+    margin-top: 15px;
+}
+.modal-button button {
+    margin-right: 10px;
+}

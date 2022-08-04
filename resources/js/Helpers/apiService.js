@@ -21,7 +21,7 @@ export default {
                     data: dataObj
                 })
 
-                if (res.data.message) { this.$toast.success(res.data.message) };
+                if (res.data.message) { this.s(res.data.message) };
                 return res
 
             } catch (e) {
