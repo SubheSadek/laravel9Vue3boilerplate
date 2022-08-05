@@ -63,8 +63,8 @@
 
                             <div class="text-center">
 
-                                <Button :loading="isLoading" shape="circle" style="height: 51px;" :disabled="isLoading" @click="handleSubmit('formValidate')"
-                                    size="large" type="primary" long>
+                                <Button :loading="isLoading" shape="circle" style="height: 51px;" :disabled="isLoading"
+                                    @click="handleSubmit('formValidate')" size="large" type="primary" long>
                                     {{ isLoading ? 'Please wait ...' : 'Continue' }}
                                 </Button>
 
@@ -123,9 +123,6 @@ export default {
         handleReset(name) {
             this.$refs[name].resetFields();
         }
-    },
-    created() {
-        // console.log(this.$router.options.routes)
     }
 }
 
